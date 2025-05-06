@@ -42,16 +42,28 @@
     font-weight: 800;
 }
 
-.input {
+.input,
+textarea.input {
     background-color: white;
     border: 1px solid red;
     border-radius: 4px;
     height: 1.5rem;
     width: 16rem;
+    color: black;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.25rem;
+    box-sizing: border-box;
 }
 
-.input-message {
+.input-message,
+textarea.input-message {
     height: 4rem;
+    min-height: 4rem;
+    resize: vertical;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0.25rem;
 }
 
 .button {

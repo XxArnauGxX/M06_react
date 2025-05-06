@@ -13,19 +13,23 @@ export default function Contact() {
           <label htmlFor="name" className="label">
             Nombre:
           </label>
-          <input type="text" name="name" className="input" />
+          <input type="text" id="name" name="name" className="input" />
         </section>
         <section className="form-section">
           <label htmlFor="email" className="label">
             Correo electrónico:
           </label>
-          <input type="email" name="email" className="input" />
+          <input type="email" id="email" name="email" className="input" />
         </section>
         <section className="form-section">
           <label htmlFor="message" className="label">
             Mensaje:
           </label>
-          <input type="text" name="message" className="input input-message" />
+          <textarea
+            id="message"
+            name="message"
+            className="input input-message"
+          />
         </section>
         <button type="submit" className="button">
           Enviar
