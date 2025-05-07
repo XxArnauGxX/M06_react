@@ -34,9 +34,9 @@ export default function VideoPlayer() {
         <input
           type="range"
           min="0"
-          max="100"
+          max="1"
           step="0.01"
-          defaultValue="1"
+          defaultValue="0.5"
           onChange={handleVolume}
         />
       </label>

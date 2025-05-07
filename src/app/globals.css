@@ -2,17 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: white;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+  background-color: black;
 }
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
+  color: white;
 }
