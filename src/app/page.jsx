@@ -12,21 +12,33 @@ export default function Home() {
   const { time, isRunning, start, pause, reset } = useTimer(10, false);
   return (
     <div>
-      <WelcomeMessage name={"Arnau"} />
-      <TaskList />
-      <MissionData />
-      <MessageSubscription />
-      <VideoPlayer />
-      <div className="container">
-        <h2>Tiempo: {time}</h2>
-        <button onClick={start} disabled={isRunning}>
-          Iniciar
-        </button>
-        <button onClick={pause} disabled={!isRunning}>
-          Pausar
-        </button>
-        <button onClick={reset}>Reiniciar</button>
-      </div>
+      <section className="section">
+        <WelcomeMessage name={"Arnau"} />
+      </section>
+      <section className="section">
+        <TaskList />
+      </section>
+      <section className="section">
+        <MissionData />
+      </section>
+      <section className="section">
+        <MessageSubscription />
+      </section>
+      <section className="section">
+        <VideoPlayer />
+      </section>
+      <section className="section">
+        <div className="container">
+          <h2>Tiempo: {time}</h2>
+          <button onClick={start} disabled={isRunning}>
+            Iniciar
+          </button>
+          <button onClick={pause} disabled={!isRunning}>
+            Pausar
+          </button>
+          <button onClick={reset}>Reiniciar</button>
+        </div>
+      </section>
     </div>
   );
 }
